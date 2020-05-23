@@ -12,6 +12,9 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
         <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/brands.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/solid.css">
     </head>
     <body>
 
@@ -21,7 +24,7 @@
 
             <div class="container">
 
-                <a class="navbar-brand h1 mb-0" href="#">Início</a>
+                <a class="navbar-brand h1 mb-0" onClick="window.location.reload()">Início</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,23 +32,19 @@
                 <div class="collapse navbar-collapse" id="navbarSite">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#item1">Quem Somos</a>
+                            <a class="nav-link" href="#quemsomos">Quem Somos</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Perfil</a>
+                            <a class="nav-link" href="#produtos">Produtos</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Serviços</a>
+                            <a class="nav-link" href="#cadastro">Cadastre-se</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Depoimentos</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contatos</a>
+                            <a class="nav-link" href="#mapa">Onde Estamos</a>
                         </li>
                     </ul>
 
@@ -86,24 +85,24 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/idaho239691_1920.jpg" class="d-sm-none d-none d-md-block w-100 mt-5">
-                    <img src="img/idaho239691_1920.jpg" class="d-xl-none d-lg-none d-md-none mt-5" height="520px">
+                    <img src="img/idaho239691_1920.jpg" class="d-sm-none d-none d-md-none d-lg-block w-100 mt-5">
+                    <img src="img/idaho239691_1920.jpg" class="d-xl-none d-lg-none mt-5" height="520px">
                     <div class="carousel-caption d-block">
                         <h1>Lorem ipsum dolor sit amet</h1>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pillow notebook chair.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/img (35).jpg" class="d-sm-none d-none d-md-block w-100 mt-5">
-                    <img src="img/img (35).jpg" class="d-xl-none d-lg-none d-md-none mt-5" height="520px">
+                    <img src="img/img (35).jpg" class="d-sm-none d-none d-md-none d-lg-block w-100 mt-5">
+                    <img src="img/img (35).jpg" class="d-xl-none d-lg-none mt-5" height="520px">
                     <div class="carousel-caption d-block">
                         <h1>Lorem ipsum dolor sit amet</h1>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pillow notebook chair.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/maxresdefault.jpg" class="d-sm-none d-none d-md-block w-100 mt-5">
-                    <img src="img/maxresdefault.jpg" class="d-xl-none d-lg-none d-md-none mt-5" height="520px">
+                    <img src="img/maxresdefault.jpg" class="d-sm-none d-none d-md-none d-lg-block w-100 mt-5">
+                    <img src="img/maxresdefault.jpg" class="d-xl-none d-lg-none mt-5" height="520px">
                     <div class="carousel-caption d-block">
                         <h1>Lorem ipsum dolor sit amet</h1>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pillow notebook chair.</p>
@@ -129,7 +128,7 @@
 
             <div class="row">
                 <div class="col-12 text-center my-5">
-                    <h1 class="display-3">Quem Somos ?</h1>
+                    <h1 class="display-3" id="quemsomos"><i class="fas text-primary fa-archway mr-2"></i>Quem Somos ?</h1>
                     <p>Maecenas orci risus, consequat eu luctus vehicula, vulputate sit amet arcu.</p>
                 </div>
             </div>
@@ -140,7 +139,7 @@
 
                 <!--SCROLLSPY NAVBAR INICIO-->
 
-                <div class="col-6 col-md-3">
+                <div class="col-7 col-md-4">
                     <nav id="navbarVertical" class="navbar navbar-light bg-light">
                         <nav class="nav nav-pills flex-column">
                             <a class="nav-link" href="#item1">Lorem ipsum</a>
@@ -165,7 +164,7 @@
                 <!--SCROLLSPY NAVBAR FIM-->
                 <!--SCROLLSPY TEXTO INICIO-->
 
-                <div class="col-6 col-md-9">
+                <div class="col-5 col-md-8">
                     <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
                         <h4 id="item1">Lorem ipsum</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis tortor fermentum ullamcorper laoreet. Fusce fermentum nibh sed lacus euismod tincidunt. Aliquam lorem turpis, condimentum id augue ut, aliquet pretium eros. In id neque mi. Fusce semper magna eget pharetra porta. Donec auctor scelerisque nisi, eleifend rhoncus lectus suscipit quis. Etiam scelerisque feugiat varius. Maecenas sed malesuada mi. Pellentesque sit amet dolor aliquet, imperdiet odio vitae, suscipit dolor. Aliquam ullamcorper eros ac justo volutpat, nec lacinia metus tempus. Morbi at odio vestibulum, scelerisque mauris in, laoreet massa. Praesent consectetur eros quis dapibus pharetra.</p>
@@ -199,51 +198,213 @@
 
         <!--SCROLLSPY FIM-->
         <!--CARDS INICIO-->
-
-        <div class="row my-5" style="margin-left: 10%; margin-right: 10%; margin-top: 2%;">
-       
-            <div class="col-sm-4 mb-2">
-               
-                <div class="card">
+        <div class="container">
+            <h1 class="display-4 text-center" id="produtos"><i class="fas fa-tools text-primary mr-2"></i>Produtos</h3>
+            <div class="row my-5">
+                <div class="col-sm-4">
                    
-                    <img class="card-img-top" src="img/My-Lake-Como-1-496x372.jpg">
-                    <div class="card-body">
-                        <h4 class="card-title">Curabitur sed</h4>
-                        <p class="cart-text">Praesent malesuada dignissim massa, sit amet interdum sem laoreet eu. </p>
-                        <a href="#" class="card-link">Saiba mais</a>
+                    <div class="card">
+                       
+                        <img class="card-img-top" src="img/My-Lake-Como-1-496x372.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Curabitur sed</h4>
+                            <p class="cart-text">Praesent malesuada dignissim massa, sit amet interdum sem laoreet eu. </p>
+                            <a href="#" class="card-link">Saiba mais</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-sm-4">
+                   
+                    <div class="card">
+                       
+                        <img class="card-img-top" src="img/9006475475_002f3c483f_b-496x372.jpg">
+                        <div class="card-body">
+                         <h4 class="card-title">Curabitur sed</h4>
+                         <p class="cart-text">Praesent malesuada dignissim massa, sit amet interdum sem laoreet eu. </p>
+                         <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Saiba mais</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-sm-4">
+                   
+                    <div class="card">
+                       
+                        <img class="card-img-top" src="img/unnamed.jpg">
+                        <div class="card-body">
+                         <h4 class="card-title">Curabitur sed</h4>
+                         <p class="cart-text">Praesent malesuada dignissim massa, sit amet interdum sem laoreet eu. </p>
+                         <a href="#" class="card-link">Saiba mais</a>
+                       </div>
                    </div>
                </div>
            </div>
-           <div class="col-sm-4 mb-2">
-               
-                <div class="card">
-                   
-                    <img class="card-img-top" src="img/9006475475_002f3c483f_b-496x372.jpg">
-                    <div class="card-body">
-                     <h4 class="card-title">Curabitur sed</h4>
-                     <p class="cart-text">Praesent malesuada dignissim massa, sit amet interdum sem laoreet eu. </p>
-                     <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Saiba mais</a>
-                   </div>
-               </div>
-           </div>
-           <div class="col-sm-4">
-               
-                <div class="card">
-                   
-                    <img class="card-img-top" src="img/unnamed.jpg">
-                    <div class="card-body">
-                     <h4 class="card-title">Curabitur sed</h4>
-                     <p class="cart-text">Praesent malesuada dignissim massa, sit amet interdum sem laoreet eu. </p>
-                     <a href="#" class="card-link">Saiba mais</a>
-                   </div>
-               </div>
-           </div>
-       </div>
+        </div>
+        
 
        <!--CARDS FIM-->
+       <!--NAVPILLS INICIO-->
+
+       <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-4"><i class="fab text-primary fa-youtube mr-1"></i>Teste</h1>
+                        <p class="lead">Guitar bed pillow toothnrush knife alchol bag notebook soap. 
+                            Bedroom television monitor computer keyboard door, window.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active mr-5" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Intro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">Animate</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="nav-pills-content">
+                            <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xkkg50KoqLU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h3 class="text-center">Exemplo de Animate</h1>
+                                        <p class="text-center">In convallis fringilla libero, tristique efficitur sem sagittis in. Lorem ipsum dolor sit amet,
+                                             consectetur adipiscing elit. Cras placerat non quam id pharetra. Curabitur cursus convallis erat,
+                                              ut suscipit arcu pulvinar sit amet. Vestibulum ac dignissim tellus.
+                                             Praesent vehicula mollis mi, hendrerit pretium arcu laoreet sit amet. Donec suscipit sem in massa dapibus congue.
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/AwePrlLhMig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h3 class="text-center">Exemplo de Intro</h1>
+                                        <p class="text-center">In convallis fringilla libero, tristique efficitur sem sagittis in. Lorem ipsum dolor sit amet,
+                                             consectetur adipiscing elit. Cras placerat non quam id pharetra. Curabitur cursus convallis erat,
+                                              ut suscipit arcu pulvinar sit amet. Vestibulum ac dignissim tellus.
+                                             Praesent vehicula mollis mi, hendrerit pretium arcu laoreet sit amet. Donec suscipit sem in massa dapibus congue.
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-item-0" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/AwePrlLhMig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h3 class="text-center">Exemplo de Intro</h1>
+                                        <p class="text-center">In convallis fringilla libero, tristique efficitur sem sagittis in. Lorem ipsum dolor sit amet,
+                                             consectetur adipiscing elit. Cras placerat non quam id pharetra. Curabitur cursus convallis erat,
+                                              ut suscipit arcu pulvinar sit amet. Vestibulum ac dignissim tellus.
+                                             Praesent vehicula mollis mi, hendrerit pretium arcu laoreet sit amet. Donec suscipit sem in massa dapibus congue.
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+       </div>
+
+        <!--NAVPILLS FIM-->
+        <!--FORMULARIO INCIO-->
+
+       <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-3">
+                    <h1 class="display-4" id="cadastro"><i class="fas text-primary mr-2 fa-paper-plane"></i>Cadastre-se</h1>
+                </div>
+            </div>
+                
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <label for="inputNome">Seu Nome</label>
+                                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                            </div>                     
+                            <div class="form-group col-sm-6">
+                                <label for="inputSobrenome">Seu Sobrenome</label>
+                                <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+                            </div>
+                        </div>
+                        <div class="form-row">    
+                            <div class="form-group col-sm-12">
+                                <label for="inputEndereco">Seu Endereço</label>
+                                <input type="text" class="form-control" id="inputEnd" placeholder="Endereço Completo">
+                            </div>
+                        </div>  
+                        <div class="form-row">  
+                            <div class="form-group col-sm-6">
+                                <label for="inputCidade">Sua Cidade</label>
+                                <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="inputEst">Seu Estado</label>
+                                <select id="inputEst" class="form-control">
+                                    <option selected>Escolha...</option>
+                                    <option>...</option>
+                                    <option>...</option>
+                                    <option>...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-2">
+                                <label for="inputCEP">Seu CEP</label>
+                                <input type="text" id="inputCEP" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">Desejo receber novidades por email.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-primary mb-5" type="submit">Enviar</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+
+       <!--FORMULARIO FIM-->
        <!--MAPA INICIO-->
 
-        <section class="maps">
+        <section class="maps mb-5">
+            <h1 class="text-center display-4 mb-3" id="mapa"><i class="fas fa-map-marker-alt text-primary mr-2"></i>Onde Estamos</h1>
             <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
                 <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
                     style="border:0" allowfullscreen>
@@ -251,7 +412,64 @@
             </div>
         </section>
 
-        <!--MAPA FIM--> 
+        <!--MAPA FIM-->
+        <!-- Footer INICIO-->
+        <footer>
+        	<div class="footer-top">
+		        <div class="container">
+		        	<div class="row">
+		        		<div class="col-md-3 footer-about wow fadeInUp">
+		        			<h3>About us</h3>
+		        			<p>
+		        				We are a young company always looking for new and creative ideas to help you with our products in your everyday work.
+		        			</p>
+		        			<p>© Company Inc.</p>
+	                    </div>
+		        		<div class="col-md-4 offset-md-1 footer-contact wow fadeInDown">
+		        			<h3>Contact</h3>
+		                	<p><i class="fas fa-map-marker-alt"></i> Via Rossini 10, 10136 Turin Italy</p>
+		                	<p><i class="fas fa-phone"></i> Phone: (0039) 333 12 68 347</p>
+		                	<p><i class="fas fa-envelope"></i> Email: <a href="mailto:hello@domain.com">hello@domain.com</a></p>
+		                	<p><i class="fab fa-skype"></i> Skype: you_online</p>
+	                    </div>
+	                    <div class="col-md-4 footer-links wow fadeInUp">
+	                    	<div class="row">
+	                    		<div class="col">
+	                    			<h3>Links</h3>
+	                    		</div>
+	                    	</div>
+	                    	<div class="row">
+	                    		<div class="col-md-6">
+	                    			<p><a class="scroll-link" href="#top-content">Home</a></p>
+	                    			<p><a href="#">Features</a></p>
+	                    			<p><a href="#">How it works</a></p>
+	                    			<p><a href="#">Our clients</a></p>
+	                    		</div>
+	                    		<div class="col-md-6">
+	                    			<p><a href="#">Plans &amp; pricing</a></p>
+	                    			<p><a href="#">Affiliates</a></p>
+	                    			<p><a href="#">Terms</a></p>
+	                    		</div>
+	                    	</div>
+	                    </div>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="footer-bottom">
+	        	<div class="container">
+	        		<div class="row">
+	           			<div class="col-12 footer-social text-center mb-2">
+	                    	<a href="#"><i class="fab fa-facebook-f mr-2"></i></a> 
+							<a href="#"><i class="fab fa-twitter mr-2"></i></a> 
+							<a href="#"><i class="fab fa-google-plus-g mr-2"></i></a> 
+							<a href="#"><i class="fab fa-instagram mr-2"></i></a> 
+							<a href="#"><i class="fab fa-pinterest mr-2"></i></a>
+	                    </div>
+	           		</div>
+	        	</div>
+	        </div>
+        </footer>
+        
         <!--MODAL INICIO-->
 
         <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
@@ -283,6 +501,12 @@
                 </div>
             </div>
         </div>
+
+        <!--MODAL FIM-->
+        
+
+
+
 
         <!-- Jquerry first, then popper.js, then Bootstrap JS -->
         <script src="node_modules/jquery/dist/jquery.js"> </script>
